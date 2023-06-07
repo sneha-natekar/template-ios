@@ -1,7 +1,7 @@
 // .devcontainer/devcontainer.json
 {
   "name": "iOS Development with Xcode",
-  "image": "mcr.microsoft.com/vscode/devcontainers/swift:latest",
+  "image": ""apple/swift:latest"",
   "extensions": [
     "vadimcn.vscode-lldb",
     "ms-vscode.cpptools"
