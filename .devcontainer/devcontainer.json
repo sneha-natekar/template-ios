@@ -1,0 +1,22 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "iOS Development with Xcode",
+  "image": "mcr.microsoft.com/vscode/devcontainers/swift:latest",
+  "extensions": [
+    "vadimcn.vscode-lldb",
+    "ms-vscode.cpptools"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+  "forwardPorts": [8081, 8082],
+  "overrideCommand": false,
+  "runArgs": [
+    "--privileged"
+  ],
+  "postCreateCommand": "sudo xcode-select -s /Applications/Xcode.app/Contents/Developer",
+  "mounts": [
+    "source=/Applications/Xcode.app,target=/Applications/Xcode.app,type=bind,consistency=cached"
+  ]
+}
